@@ -4,4 +4,4 @@ RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 RUN apt-get update \
   && apt-get install -y libicu-dev \
-  && docker-php-ext-install intl
+  && docker-php-ext-install intl pdo pdo_mysql
