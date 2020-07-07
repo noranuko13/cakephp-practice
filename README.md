@@ -1,5 +1,12 @@
 # CakePHP Practice
 
+## CakePHP
+- 開発サーバー起動
+  - http://127.0.0.1:8765/
+```shell script
+bin/cake server --host 0.0.0.0
+```
+
 ## Composer
 - [composer - Docker Hub.html](https://hub.docker.com/_/composer)
 

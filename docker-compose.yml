@@ -12,5 +12,7 @@ services:
 
   php:
     build: ./docker/php
+    ports:
+      - 8765:8765
     volumes:
       - ./fivews:/var/www/fivews
