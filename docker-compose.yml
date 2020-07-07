@@ -13,4 +13,4 @@ services:
   php:
     image: php:7.4-fpm
     volumes:
-      - ./src:/var/www/cakephp-practice
+      - ./fivews:/var/www/fivews
