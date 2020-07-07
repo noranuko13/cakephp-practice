@@ -11,6 +11,6 @@ services:
       - php
 
   php:
-    image: php:7.4-fpm
+    build: ./docker/php
     volumes:
       - ./fivews:/var/www/fivews
