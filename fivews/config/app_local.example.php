@@ -36,7 +36,7 @@ return [
      */
     'Datasources' => [
         'default' => [
-            'host' => 'db:3306',
+            'host' => 'fivews-db:3306',
             /*
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
@@ -64,7 +64,7 @@ return [
          * The test connection is used during the test suite.
          */
         'test' => [
-            'host' => 'testdb:3308',
+            'host' => 'fivews-testdb:3308',
             //'port' => 'non_standard_port_number',
             'username' => 'fivews',
             'password' => 'wWJ8Uy2OyiXxIUNEcDnX',
