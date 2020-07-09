@@ -18,6 +18,7 @@ services:
       - 8765:8765
     volumes:
       - ./fivews:/var/www/fivews
+    working_dir: /var/www/fivews
 
   db:
     container_name: fivews-db
