@@ -1,5 +1,7 @@
 # CakePHP Practice
 
+![Actions Status](https://github.com/noranuko13/cakephp-practice/workflows/CI/badge.svg)
+
 ## CakePHP
 - phpコンテナのビルド
 ```shell script
