@@ -1,6 +1,11 @@
 # CakePHP Practice
 
 ## CakePHP
+- phpコンテナに入る
+```shell script
+docker exec -it fivews-php bash
+```
+
 - 開発サーバー起動
   - http://127.0.0.1:8765/
 ```shell script

@@ -2,6 +2,7 @@ version: '3'
 
 services:
   nginx:
+    container_name: fivews-nginx
     image: nginx:1.19
     ports:
       - 8080:80
@@ -11,6 +12,7 @@ services:
       - php
 
   php:
+    container_name: fivews-php
     build: ./docker/php
     ports:
       - 8765:8765
@@ -18,6 +20,7 @@ services:
       - ./fivews:/var/www/fivews
 
   db:
+    container_name: fivews-db
     image: mysql:8.0
     ports:
       - 3306:3306
@@ -30,6 +33,7 @@ services:
     restart: always
 
   testdb:
+    container_name: fivews-testdb
     image: mysql:8.0
     ports:
       - 3308:3306
