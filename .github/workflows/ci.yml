@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Start fivews-php, fivews-testdb, service.
+        run: docker-compose up -d fivews-php fivews-testdb
+      - name: Install PHP packages.
+        run: docker-compose run fivews-php composer install --no-interaction
+      - name: Run unit tests.
+        run: docker-compose run fivews-php vendor/bin/phpunit
