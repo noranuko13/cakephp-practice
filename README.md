@@ -12,6 +12,12 @@ docker exec -it fivews-php bash
 bin/cake server --host 0.0.0.0
 ```
 
+- PHPUnit テスト
+```shell script
+vendor/bin/phpunit
+```
+
+
 ## Composer
 - [composer - Docker Hub.html](https://hub.docker.com/_/composer)
 
