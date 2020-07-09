@@ -1,4 +1,5 @@
-; https://github.com/cakephp/cakephp/blob/72fc4cc8ec2f46a96f3bf8086f6b043e12a5c6d5/.editorconfig
+; This file is for unifying the coding style for different editors and IDEs.
+; More information at http://editorconfig.org
 
 root = true
 
@@ -14,6 +15,9 @@ end_of_line = crlf
 
 [*.yml]
 indent_size = 2
+
+[*.twig]
+insert_final_newline = false
 
 [Makefile]
 indent_style = tab
