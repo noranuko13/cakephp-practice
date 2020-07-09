@@ -15,5 +15,7 @@ jobs:
         run: docker-compose up -d fivews-php fivews-testdb
       - name: Install PHP packages.
         run: docker-compose run fivews-php composer install --no-interaction
+      - name: Run CakePHP Code Sniffer.
+        run: docker-compose run fivews-php composer cs-check
       - name: Run unit tests.
         run: docker-compose run fivews-php composer test
