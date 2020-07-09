@@ -16,4 +16,4 @@ jobs:
       - name: Install PHP packages.
         run: docker-compose run fivews-php composer install --no-interaction
       - name: Run unit tests.
-        run: docker-compose run fivews-php vendor/bin/phpunit
+        run: docker-compose run fivews-php composer test
