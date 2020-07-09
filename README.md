@@ -1,9 +1,19 @@
 # CakePHP Practice
 
 ## CakePHP
+- phpコンテナのビルド
+```shell script
+docker-compose up -d
+```
+
 - phpコンテナに入る
 ```shell script
 docker exec -it fivews-php bash
+```
+
+- composerの使用
+```shell script
+composer --version
 ```
 
 - 開発サーバー起動
@@ -15,16 +25,6 @@ bin/cake server --host 0.0.0.0
 - PHPUnit テスト
 ```shell script
 vendor/bin/phpunit
-```
-
-
-## Composer
-- [composer - Docker Hub.html](https://hub.docker.com/_/composer)
-
-- Windows PowerShell 7
-```shell script
-docker run --rm --interactive --tty --volume ${PWD}:/app `
-    composer --version --ignore-platform-reqs
 ```
 
 
